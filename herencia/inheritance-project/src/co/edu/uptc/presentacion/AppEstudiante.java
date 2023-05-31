@@ -3,6 +3,7 @@ package co.edu.uptc.presentacion;
 import java.util.Scanner;
 
 import co.edu.uptc.control.EstudianteControl;
+import co.edu.uptc.modelo.Persona;
 
 public class AppEstudiante {
     static String nombre;
