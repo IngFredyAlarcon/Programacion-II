@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "herencia/inheritance-project/src"
+        "herencia/inheritance-project/src",
+        "asociacion/src"
     ]
 }
