@@ -3,7 +3,6 @@ package co.edu.uptc.presentacion;
 import java.util.Scanner;
 
 import co.edu.uptc.control.CelularControl;
-import co.edu.uptc.modelo.Celular;
 
 public class AppCelular {
     static String marca;
@@ -35,16 +34,9 @@ public class AppCelular {
         cc.eliminarCelular();// Eliminando el objeto
         try {
             System.out.println(cc.mostrarDatos());
-        } catch (Exception e) {
-            // TODO: handle exception
-            System.out.println("El objeto solicitado es nulo!!!");
+        } catch (NullPointerException npe) {
+            System.out.println(" El objeto solicitado es nulo");
         }
-
-        // Enviando el objeto c1 al garbage colector
-        // c1 = null;
-        // System.gc();// Garbage collection
-        // System.out.println("Después de enviar el objeto c1 al garbage colector");
-        // System.out.println(c1.toString()); // Sí se invoca así lanzará una exception
-        // nullPointer
+        sc.close();
     }
 }
