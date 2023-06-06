@@ -7,7 +7,7 @@ public class Estudiante extends Persona {
     private String programa;
     // private Asignatura asignatura;
     // private Asignatura[] asignatura;
-    private ArrayList<Asignatura> asignatura;
+    private ArrayList<Asignatura> listaAsignaturas;
     private Usuario usuario;
 
     // Sino se coloca el método super que es la invocación al constructor de la
@@ -18,6 +18,7 @@ public class Estudiante extends Persona {
         super(nombre, apellido, edad);
         this.codigo = codigo;
         this.programa = programa;
+        listaAsignaturas = new ArrayList<Asignatura>();
     }
 
     public String getCodigo() {
@@ -38,7 +39,8 @@ public class Estudiante extends Persona {
 
     @Override
     public String toString() {
-        return "Estudiante " + super.toString() + "[codigo=" + codigo + ", programa=" + programa + "]";
+        return "Estudiante [codigo=" + codigo + ", programa=" + programa + ", listaAsignaturas=" + listaAsignaturas
+                + ", usuario=" + usuario + "]";
     }
 
 }
