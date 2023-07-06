@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
-        "agregacion\\src",
-        "asociacion\\src",
-        "composicion\\src",
-        "herencia\\inheritance-project\\src"
+        "herencia/inheritance-project/src",
+        "composicion/src",
+        "asociacion/src",
+        "agregacion/src",
+        "sobre-escritura/project-override/src"
     ]
 }
