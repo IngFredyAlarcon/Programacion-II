@@ -11,10 +11,16 @@ public class TestBag {
         int packageSize = 0;
         ArrayList bagCookies, bagCandys, bagDonuts;
         boolean c = false, d = false, co = false;
+        BagControl bc = new BagControl();
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Shopping!!");
         System.out.println("enter the flavor of donuts");
         flavorDonut = sc.nextLine();
+        d = bc.packProductDonut(flavorDonut);
+        System.out.println("enter the flavor of donuts");
+        flavorDonut = sc.nextLine();
+        d = bc.packProductDonut(flavorDonut);
         System.out.println("enter the type of cookie");
         typeCookie = sc.nextLine();
         System.out.println("enter the packageSize of candy");
@@ -23,9 +29,8 @@ public class TestBag {
         System.out.println("enter the flavor of candy");
         flavorCandy = sc.nextLine();
 
-        BagControl bc = new BagControl();
         c = bc.packProductCandy(packageSize, flavorCandy);
-        d = bc.packProductDonut(flavorCandy);
+
         co = bc.packProductCookie(typeCookie);
 
         bagCookies = bc.getBagCookies();

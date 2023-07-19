@@ -12,23 +12,26 @@ public class BagControl {
     Bag<Cookie> bagCookie;
     Bag<Candy> bagCandy;
 
+    public BagControl() {
+        bagDonut = new Bag<Donut>();
+        bagCandy = new Bag<Candy>();
+        bagCookie = new Bag<Cookie>();
+    }
+
     public boolean packProductDonut(String flavor) {
         Donut donut = new Donut(flavor);
-        bagDonut = new Bag<Donut>();
         bagDonut.add(donut);
         return true;
     }
 
     public boolean packProductCandy(int packageSize, String flavor) {
         Candy candy = new Candy(packageSize, flavor);
-        bagCandy = new Bag<Candy>();
         bagCandy.add(candy);
         return true;
     }
 
     public boolean packProductCookie(String type) {
         Cookie cookie = new Cookie(type);
-        bagCookie = new Bag<Cookie>();
         bagCookie.add(cookie);
         return true;
     }
