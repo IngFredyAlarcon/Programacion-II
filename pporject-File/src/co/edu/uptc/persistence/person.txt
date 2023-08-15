@@ -1,0 +1,3 @@
+Person [firstName=Fredy, lastName=Alarcon, age=39]
+Person [firstName=Diana, lastName=Casas, age=32]
+Person [firstName=Carolina, lastName=Gonzalez, age=32]
