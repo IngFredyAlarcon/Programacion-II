@@ -1,7 +1,9 @@
 package co.edu.uptc.control;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,6 +13,8 @@ public class FileManagementControl {
     public static final String fileExtension = ".txt";
     private PrintWriter pw;
     private File file;
+    private FileReader fr;
+    private BufferedReader br;
 
     public boolean createFile(String fileName) {
         file = new File(fileName);
@@ -54,5 +58,23 @@ public class FileManagementControl {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public boolean readFile(String fileName) {
+        file = new File(fileName);
+        String line = "";
+        try {
+            fr = new FileReader(file, null);
+            br = new BufferedReader(fr);
+            while (line != null) {
+                line = br.readLine();
+            }
+            return true;
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            return false;
+        }
+
     }
 }

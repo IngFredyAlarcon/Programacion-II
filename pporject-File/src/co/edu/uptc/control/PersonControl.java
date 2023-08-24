@@ -34,4 +34,6 @@ public class PersonControl {
     public String showInformationPerson() {
         return p.toString();
     }
+
+    // public String read
 }
