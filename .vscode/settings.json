@@ -3,6 +3,7 @@
         "agregacion\\src",
         "asociacion\\src",
         "composicion\\src",
-        "herencia\\inheritance-project\\src"
+        "herencia\\inheritance-project\\src",
+        "genericos\\project-generics\\src"
     ]
 }
