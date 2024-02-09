@@ -1,0 +1,54 @@
+Proyecto de ejemplo gestión de archivos (.txt)
+
+1. Crear estructura de paquetes
+model
+control
+persistence
+util
+app
+
+2. Crear las clases del modelo
+model:
+ - Movie
+    atributos:
+		private String name;
+        private String genero;
+        private String director;
+        private int year;
+        private String sinopsis;
+        private String image;
+    metodos:
+        set, get, toString, y los que deseen adicionar según el negocio
+
+3. Crear la clase de gestión de archivos
+util:
+ - FileManagement
+    atributos:
+        private File file;
+        private PrintWriter pw;
+        private BufferedReader br;
+        public static final String filePath = "src\\co\\edu\\uptc\\persistence\\";
+        public static final String fileExtension = ".txt";
+    método:
+        createFile
+        readFile
+        writeFile
+        deleteFile(opcional depende la logica del negocio)
+
+        Nota: 
+            // pw = new PrintWriter(filePath + file + fileExtension);// Cuando se quiere
+            // sobreescribir el archivo
+            pw = new PrintWriter(new FileWriter(filePath + file + fileExtension, true));// Sin sobreescribir, adicionando en una nueva línea
+4. Crear la clase control
+control:
+    - MovieControl
+        atributos:
+            private Movie movie;
+            private FileManagement fileManagement;
+
+        métodos:
+            CRUD
+
+5. Crear la clase para realizar pruebas de ejecución con el método main
+    - App 
+ 
