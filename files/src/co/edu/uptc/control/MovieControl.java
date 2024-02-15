@@ -45,4 +45,26 @@ public class MovieControl {
         result = fileManagement.readFile(fileName);
         return result;
     }
+
+    public boolean updateMovie(String fileName, String oldData, String newData) {
+        movie = new Movie();
+
+        ArrayList<String> result = new ArrayList<>();
+        result = fileManagement.readFile(fileName);
+        for (int i = 0; i < result.size(); i++) {
+            if (result.get(i).contains("name=" + oldData)) {
+                System.out.println("Si contiene el nombre");
+                String updatedLine = result.get(i).replace(oldData, newData);
+                result.set(i, updatedLine);
+            }
+        }
+        if (fileManagement.createFile(fileName)) {
+            for (String line : result) {
+                fileManagement.writeFile(fileName, line);
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

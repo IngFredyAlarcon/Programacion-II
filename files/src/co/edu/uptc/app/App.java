@@ -24,6 +24,7 @@ public class App {
         image = sc.nextLine();
         System.out.println("enter the Year");
         year = sc.nextInt();
+        sc.nextLine();
 
         if (mc.addMovie(name, genero, director, year, sinopsis, image)) {
             System.out.println("Movie add successfull");
@@ -31,6 +32,18 @@ public class App {
         } else {
             System.out.println("Error");
         }
+
+        result = mc.readFile("Movie");
+        for (int i = 0; i < result.size(); i++) {
+            System.out.println("Movie " + (i + 1));
+            System.out.println(result.get(i));
+        }
+
+        System.out.println("digite el nombre a buscar para actualizar:");
+        String oldName = sc.nextLine();
+        System.out.println("digite el nuevo nombre a actualizar:");
+        String newName = sc.nextLine();
+        mc.updateMovie("Movie", oldName, newName);
 
         result = mc.readFile("Movie");
         for (int i = 0; i < result.size(); i++) {
