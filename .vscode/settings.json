@@ -4,6 +4,11 @@
         "asociacion\\src",
         "composicion\\src",
         "herencia\\inheritance-project\\src",
-        "genericos\\project-generics\\src"
+        "genericos\\project-generics\\src",
+        "ejemplos-gson\\src"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\UPTC\\Contenidos\\Programación II\\gson-2.10.1.jar"
     ]
 }
