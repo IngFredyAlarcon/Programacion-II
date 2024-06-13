@@ -41,10 +41,12 @@ public class App {
 
         System.out.println("digite el nombre a buscar para actualizar:");
         String oldName = sc.nextLine();
-        System.out.println("digite el nuevo nombre a actualizar:");
-        String newName = sc.nextLine();
-        mc.updateMovie("Movie", oldName, newName);
-
+        if (mc.searchMovie("Movie", oldName)) {
+            System.out.println("digite el nuevo nombre a actualizar:");
+            String newName = sc.nextLine();
+            mc.updateMovie("Movie", oldName, newName);
+        }
+       
         result = mc.readFile("Movie");
         for (int i = 0; i < result.size(); i++) {
             System.out.println("Movie " + (i + 1));

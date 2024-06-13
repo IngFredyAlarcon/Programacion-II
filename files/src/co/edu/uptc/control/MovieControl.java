@@ -46,6 +46,18 @@ public class MovieControl {
         return result;
     }
 
+    public boolean searchMovie(String fileName, String data) {
+        movie = new Movie();
+        ArrayList<String> result = new ArrayList<>();
+        result = fileManagement.readFile(fileName);
+        for (String line : result) {
+            if (line.contains(data)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean updateMovie(String fileName, String oldData, String newData) {
         movie = new Movie();
 

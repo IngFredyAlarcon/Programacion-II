@@ -14,7 +14,7 @@ public class AppPerson {
         final String json = "{\"id\":46,\"first_name\":\"Denna\",\"last_name\":\"Crosio\"}";
         StringBuilder sb = new StringBuilder();
         try {
-            File file = new File("ejemplos-gson\\src\\data.json");
+            File file = new File("src\\data.json");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line = br.readLine();
             while (line != null) {

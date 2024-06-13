@@ -16,7 +16,7 @@ public class ListPersons {
         Gson gson = gb.create();
         StringBuilder sb = new StringBuilder();
         try {
-            File file = new File("ejemplos-gson\\src\\dataPersons.json");
+            File file = new File("src\\dataPersons.json");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line = br.readLine();
             while (line != null) {
@@ -28,5 +28,13 @@ public class ListPersons {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
+        // bloque con un String construido desde un archivo
+        final Gson gson2 = gb.create();
+        final Person person = gson.fromJson(sb.toString(), Person.class);
+        final Person person2 = gson2.fromJson(sb.toString(), Person.class);
+        person.setFirst_name("Carolina");
+        System.out.println(showPersonProperties(person));
+        System.out.println(gson2.toJson(person2));
     }
 }
