@@ -5,5 +5,6 @@
         "asociacion/src",
         "agregacion/src",
         "sobre-escritura/project-override/src"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
