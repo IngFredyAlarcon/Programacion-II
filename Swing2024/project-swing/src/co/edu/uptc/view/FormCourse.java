@@ -1,6 +1,5 @@
 package co.edu.uptc.view;
 
-import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -136,6 +135,7 @@ public class FormCourse extends javax.swing.JFrame implements ActionListener{//C
         if(e.getSource() == buttonSave){//Si el evento es generado por el botón de guardar
             CourseController courseController = new CourseController();
             courseController.saveCourse(textFieldName.getText(), textFieldCode.getText(), Integer.parseInt(textFieldCredits.getText()));
+            this.setVisible(false);
             System.out.println(courseController.getCourse());//Imprime el curso guardado en consola
         }
         else{//Si el evento es generado por el botón de cancelar
@@ -144,4 +144,5 @@ public class FormCourse extends javax.swing.JFrame implements ActionListener{//C
             }
         }
     }
+
 }

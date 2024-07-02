@@ -1,0 +1,65 @@
+[
+  {
+    "firstName": "andres",
+    "lastName": "Perez",
+    "email": "a@gmail.com",
+    "id": "2",
+    "courses": [
+      {
+        "name": "Exprecion",
+        "code": "45",
+        "credits": 2
+      },
+      {
+        "name": "Calculo 4",
+        "code": "1235",
+        "credits": 1
+      },
+      {
+        "name": "Calculo 4",
+        "code": "1235",
+        "credits": 1
+      }
+    ]
+  },
+  {
+    "firstName": "juan",
+    "lastName": "luis",
+    "email": "a@gmail.com",
+    "id": "4",
+    "courses": [
+      {
+        "name": "Fisica2",
+        "code": "12345",
+        "credits": 4,
+        "students": []
+      },
+      {
+        "name": "Electronica 2",
+        "code": "123",
+        "credits": 1
+      }
+    ]
+  },
+  {
+    "firstName": "andrew",
+    "lastName": "gar",
+    "email": "a@gmail.com",
+    "id": "1",
+    "courses": [
+      {
+        "name": "Algoritmos",
+        "code": "1122",
+        "credits": 4,
+        "students": []
+      }
+    ]
+  },
+  {
+    "firstName": "jorge",
+    "lastName": "ulloa",
+    "email": "orge@hotmail.com",
+    "id": "14",
+    "courses": []
+  }
+]
