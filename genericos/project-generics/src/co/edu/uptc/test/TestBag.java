@@ -30,7 +30,10 @@ public class TestBag {
         flavorCandy = sc.nextLine();
 
         c = bc.packProductCandy(packageSize, flavorCandy);
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
         co = bc.packProductCookie(typeCookie);
 
         bagCookies = bc.getBagCookies();
