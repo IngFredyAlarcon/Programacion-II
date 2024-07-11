@@ -6,5 +6,6 @@
         "agregacion/src",
         "sobre-escritura/project-override/src"
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
