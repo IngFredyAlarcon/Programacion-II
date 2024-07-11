@@ -16,14 +16,11 @@ public class CategoryController {
 
     @FXML
     private TextField category_name;
+    private TextField category_description;
 
     //Guardar categoria en el archivo json
     @FXML
     private void saveCategory() throws IOException {
-        // Obtener datos del archivo category.fxml
-        // Convertir en un objeto de la clase Category del modelo
-        // Guardarlo en un archivo json utilizando la librería gson
-        // Ejemplo:
         Category category = convertFXMLToCategory();
         Gson gson = new Gson();
         String json = gson.toJson(category);
@@ -38,6 +35,7 @@ public class CategoryController {
     private Category convertFXMLToCategory() {
         Category category = new Category();
         category.setName(category_name.getText());
+        category.setDescription(category_description.getText());
         return category;
 
     }
@@ -46,10 +44,10 @@ public class CategoryController {
     @FXML
     private void readCategory() throws IOException {
         Gson gson = new Gson();
-        BufferedReader br = new BufferedReader(new FileReader("persistencia/category.json"));
+        BufferedReader br = new BufferedReader(new FileReader("ventas\\src\\main\\java\\co\\edu\\uptc\\persistencia\\category.json"));
         Category category = gson.fromJson(br, Category.class);
-        System.out.println(category.getId());
         System.out.println(category.getName());
+        System.out.println(category.getDescription());
     }
     
 }
