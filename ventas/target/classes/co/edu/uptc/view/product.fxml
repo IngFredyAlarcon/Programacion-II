@@ -10,21 +10,18 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uptc.controller.ProductController">
     <children>
         <Label layoutX="50.0" layoutY="50.0" text="Product Name:" />
-        <TextField layoutX="150.0" layoutY="50.0" />
+        <TextField fx:id="product_name" layoutX="150.0" layoutY="50.0" />
         
         <Label layoutX="50.0" layoutY="100.0" text="Price:" />
-        <TextField layoutX="150.0" layoutY="100.0" />
+        <TextField fx:id="product_price" layoutX="150.0" layoutY="100.0" />
 
-        <ComboBox fx:id="comboboxCategory" layoutX="50.0" layoutY="150.0" prefWidth="90.0" promptText="choose">
-            <items>
-                <String fx:value="Technology" />
-                <String fx:value="Network" />
-                <String fx:value="Mobile" />
-            </items>
-        </ComboBox>
+        <Label layoutX="50.0" layoutY="100.0" text="Stock:" />
+        <TextField fx:id="product_stock" layoutX="150.0" layoutY="100.0" />
 
-        
-        <Button fx:id="addProduct" layoutX="250.0" layoutY="150.0" text="Save" onAction="#switchToMain" />
+        <Label layoutX="50.0" layoutY="100.0" text="Seleccione la Categoria:" />
+        <ComboBox fx:id="comboboxCategory" layoutX="50.0" layoutY="150.0" prefWidth="90.0" promptText="choose" />
+
+        <Button fx:id="addProduct" layoutX="250.0" layoutY="150.0" text="Save" onAction="#saveProduct" />
     </children>
     <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

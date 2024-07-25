@@ -10,7 +10,7 @@
         <Label layoutX="50.0" layoutY="50.0" text="Category Name:" />
         <TextField fx:id="category_name" layoutX="150.0" layoutY="50.0" />
         <Label layoutX="50.0" layoutY="100.0" text="Description:" />
-        <TextField fx:id="description" layoutX="150.0" layoutY="100.0" />
+        <TextField fx:id="category_description" layoutX="150.0" layoutY="100.0" />
         <Button fx:id="addCategory" layoutX="300.0" layoutY="50.0" text="Add Category" onAction="#saveCategory" />
     </children>
 </VBox>
