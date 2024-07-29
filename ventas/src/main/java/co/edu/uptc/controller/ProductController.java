@@ -19,8 +19,13 @@ import co.edu.uptc.App;
 import co.edu.uptc.model.Category;
 import co.edu.uptc.model.Product;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class ProductController {
 
@@ -124,5 +129,34 @@ public class ProductController {
         product.setCategory(selectedCategory);
         return product;
 
+    }
+
+    //Mostrar detalles de la categoria seleccionada en un popup
+    @FXML
+    private void showCategoryDetails() {
+        String selectedCategory = comboboxCategory.getValue();
+        if (selectedCategory != null) {
+            try {
+                // Cargar la vista del popup
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/co/edu/uptc/view/CategoryDetails.fxml"));
+                Parent root = fxmlLoader.load();
+
+                // Obtener el controlador del popup
+                CategoryController controller = fxmlLoader.getController();
+                controller.setCategory(selectedCategory);
+
+                // Crear la ventana emergente
+                Stage stage = new Stage();
+                stage.initModality(Modality.APPLICATION_MODAL);
+                stage.setTitle("Detalles de la Categoría");
+                stage.setScene(new Scene(root));
+                stage.showAndWait();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("No se ha seleccionado ninguna categoría.");
+        }
     }
 }

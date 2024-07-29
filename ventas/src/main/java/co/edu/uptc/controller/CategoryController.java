@@ -17,8 +17,11 @@ import com.google.gson.reflect.TypeToken;
 
 import co.edu.uptc.App;
 import co.edu.uptc.model.Category;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class CategoryController {
 
@@ -26,6 +29,8 @@ public class CategoryController {
     private TextField category_name;
     @FXML
     private TextField category_description;
+    @FXML
+    private Label categoryLabel;
 
     //Guardar categoria en el archivo json
     @FXML
@@ -83,6 +88,17 @@ public class CategoryController {
             }
         }
         return maxId + 1;
+    }
+
+    public void setCategory(String category) {
+        categoryLabel.setText("Detalles de la categoría: " + category);
+    }
+
+     @FXML
+    private void handleAccept(ActionEvent event) {
+        // Obtener la ventana actual y cerrarla
+        Stage stage = (Stage) categoryLabel.getScene().getWindow();
+        stage.close();
     }
     
 }
