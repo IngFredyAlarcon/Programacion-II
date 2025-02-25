@@ -1,0 +1,5 @@
+Movie [title=titanic, year=2000, genre=drama, synopsis=pelicula de drama]
+Movie [title=ppp, year=2024, genre=d, synopsis=sdsaf]
+Movie [title=deadpool 3, year=2012, genre=Comedia, synopsis=sadlo saldsa]
+Movie [title=ajlaksjd, year=213, genre=sdsad, synopsis=sadasd]
+Movie [title=Pinocho, year=2020, genre=Infantil, synopsis=pelicula infantil]

@@ -18,7 +18,6 @@ public class Product {
         this.category = category;
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -27,7 +26,6 @@ public class Product {
         this.id = id;
     }
 
-    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -36,7 +34,6 @@ public class Product {
         this.name = name;
     }
 
-    // Getters and Setters
     public double getPrice() {
         return price;
     }
@@ -45,7 +42,6 @@ public class Product {
         this.price = price;
     }
 
-    // Getters and Setters
     public int getStock() {
         return stock;
     }
@@ -54,7 +50,6 @@ public class Product {
         this.stock = stock;
     }
 
-    // Getters and Setters
     public Category getCategory() {
         return category;
     }
@@ -63,7 +58,6 @@ public class Product {
         this.category = category;
     }
 
-    // toString
     @Override
     public String toString() {
         return "Product{" +

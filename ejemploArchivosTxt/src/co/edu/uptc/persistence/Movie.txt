@@ -1,0 +1,6 @@
+Movie [name=pppp, genero=sadas, director=sada, year=3000, sinopsis=asd, image=asd]
+Movie [name=Titanic, genero=Drama, director=No se, year=2000, sinopsis=Pel�cula de Drama, image=imagen]
+Movie [name=Rojo, genero=Infantil, director=el mismo, year=2013, sinopsis=pel�cula infantil, image=imagen rojo]
+Movie [name=Conde II, genero=Acci�n, director=Juan Talero, year=2018, sinopsis=Pel�cula de acci�n, image=imagen]
+Movie [name=El paseo, genero=comedia, director=Albert J., year=2013, sinopsis=pel�cula colombiana, image=imagen]
+Movie [name=Pinocho, genero=Familiar, director=Guillermo del Toro, year=2022, sinopsis=pel�cula infant�l, image=imagen]
