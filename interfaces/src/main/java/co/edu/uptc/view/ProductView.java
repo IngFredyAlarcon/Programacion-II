@@ -52,6 +52,7 @@ public class ProductView {
     }
 
     public void listProducts() {
+        
         productController.listProducts().forEach(product -> {
             System.out.println("Name: " + product.getName());
             System.out.println("Description: " + product.getDescription());

@@ -31,7 +31,7 @@ public class ProductDAO implements IProduct {
     @Override
     public void updateProduct(Product product) {
         for (Product p : products) {
-            if (p.getName() == product.getName()) {
+            if (p.getName().equals(product.getName())) {
                 p.setDescription(product.getDescription());
                 p.setName(product.getName());
                 p.setPrice(product.getPrice());
