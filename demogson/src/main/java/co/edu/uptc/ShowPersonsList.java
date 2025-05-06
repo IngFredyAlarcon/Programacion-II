@@ -93,11 +93,9 @@ public class ShowPersonsList {
         } else {
             System.out.println("No se encontró la persona con id: " + idUpdate);
         }
-
         // Update file dataPersons.json
         updatePerson(personUpdate, gson);
         sc.close();
-
     }
 
     // print directory properties with pretty format
