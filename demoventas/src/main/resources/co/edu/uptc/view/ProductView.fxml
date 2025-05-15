@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uptc.view.ProductViewController" spacing="10.0">
+    
+    <Label text="Gestión de Productos"/>
+
+    <HBox spacing="10.0">
+        <TextField fx:id="productName" promptText="Nombre"/>
+        <TextField fx:id="productPrice" promptText="Precio"/>
+        <ComboBox fx:id="categoryComboBox"/>
+        <Button text="Agregar" onAction="#handleAddProduct"/>
+    </HBox>
+
+    <TableView fx:id="productTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="nameCol" text="Nombre"/>
+            <TableColumn fx:id="priceCol" text="Precio"/>
+            <TableColumn fx:id="categoryCol" text="Categoría"/>
+        </columns>
+    </TableView>
+</VBox>

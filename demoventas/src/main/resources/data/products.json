@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "name": "Teclado",
+    "description": "",
+    "price": 40000.0,
+    "stock": 0,
+    "category": {
+      "id": 0,
+      "name": "Tecnología",
+      "description": "Productos del sector tecnológico"
+    }
+  }
+]

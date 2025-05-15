@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uptc.view.CategoryViewController"
+      spacing="10">
+    <Label text="Gestión de Categorías"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="categoryName" promptText="Nombre"/>
+        <TextField fx:id="categoryDesc" promptText="Descripción"/>
+        <Button text="Agregar" onAction="#handleAddCategory"/>
+    </HBox>
+
+    <TableView fx:id="categoryTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="nameCol" text="Nombre"/>
+            <TableColumn fx:id="descCol" text="Descripción"/>
+        </columns>
+    </TableView>
+</VBox>
