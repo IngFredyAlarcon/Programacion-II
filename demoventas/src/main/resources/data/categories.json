@@ -2,26 +2,16 @@
   {
     "id": 0,
     "name": "Tecnología",
-    "description": "Productos del sector tecnológico"
+    "description": "Productos relacionados con tecnología"
   },
   {
     "id": 0,
     "name": "Entretenimiento",
-    "description": "Productos orientados al ocio y al entretenimiento"
+    "description": "Actegoria para productos de entretenimiento"
   },
   {
     "id": 0,
     "name": "Sonido",
-    "description": "Categoria de sonido"
-  },
-  {
-    "id": 0,
-    "name": "Prueba",
-    "description": "Prueba"
-  },
-  {
-    "id": 0,
-    "name": "Prueba 2",
-    "description": "Otra prueba"
+    "description": "Categoria para productos sonoros"
   }
 ]

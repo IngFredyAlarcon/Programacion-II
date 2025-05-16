@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.TilePane?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uptc.view.ProductViewController" spacing="10.0">
-    
-    <Label text="Gestión de Productos"/>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uptc.view.ProductViewController"
+    spacing="10.0">
+
+    <Label text="Gestión de Productos" />
 
     <HBox spacing="10.0">
-        <TextField fx:id="productName" promptText="Nombre"/>
-        <TextField fx:id="productPrice" promptText="Precio"/>
-        <ComboBox fx:id="categoryComboBox"/>
-        <Button text="Agregar" onAction="#handleAddProduct"/>
+        <TextField fx:id="productName" promptText="Nombre" />
+        <TextField fx:id="productPrice" promptText="Precio" />
+        <ComboBox fx:id="categoryComboBox" />
     </HBox>
+    <HBox>
+        <Button text="Seleccionar Imagen" onAction="#selectImage" />
+        <ImageView fx:id="productImageView" fitHeight="100" fitWidth="100" />
+    </HBox>
+    <HBox>
+        <Button text="Agregar" onAction="#handleAddProduct" />
+        <!--Button text="Modificar" onAction="#handleUpdateProduct" />
+        <Button text="Eliminar" onAction="#handleDeleteProduct" />
+        <Button text="Limpiar" onAction="#handleClearFields" /-->
+    </HBox>
+
+    <TilePane fx:id="productTilePane" hgap="10" vgap="10" prefColumns="3" />
 
     <TableView fx:id="productTable" prefHeight="300">
         <columns>
-            <TableColumn fx:id="nameCol" text="Nombre"/>
-            <TableColumn fx:id="priceCol" text="Precio"/>
-            <TableColumn fx:id="categoryCol" text="Categoría"/>
+            <TableColumn fx:id="nameCol" text="Nombre" />
+            <TableColumn fx:id="priceCol" text="Precio" />
+            <TableColumn fx:id="categoryCol" text="Categoría" />
         </columns>
     </TableView>
 </VBox>

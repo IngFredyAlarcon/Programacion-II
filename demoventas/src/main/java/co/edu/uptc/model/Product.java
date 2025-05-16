@@ -7,17 +7,19 @@ public class Product {
     private double price;
     private int stock;
     private Category category;
+    private String imagePath;
 
     public Product() {
     }
 
-    public Product(int id, String name, String description, double price, int stock, Category category) {
+    public Product(int id, String name, String description, double price, int stock, Category category, String imagePath) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.stock = stock;
         this.category = category;
+        this.imagePath = imagePath;
     }
 
     public int getId() {
@@ -67,6 +69,14 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }    
 
     @Override
     public String toString() {

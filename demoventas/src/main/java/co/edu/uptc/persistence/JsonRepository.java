@@ -66,6 +66,12 @@ public class JsonRepository<T> implements Repository<T> {
         
     }
 
+    @Override
+    public void save(T entity) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'save'");
+    }
+
     
 
     /*@Override
