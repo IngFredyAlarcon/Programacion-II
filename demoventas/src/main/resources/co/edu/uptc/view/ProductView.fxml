@@ -13,6 +13,8 @@
     <HBox spacing="10.0">
         <TextField fx:id="productName" promptText="Nombre" />
         <TextField fx:id="productPrice" promptText="Precio" />
+        <TextArea fx:id="productDescription" promptText="Descripción" />
+        <TextField fx:id="productStock" promptText="Cantidad" />
         <ComboBox fx:id="categoryComboBox" />
     </HBox>
     <HBox>
@@ -20,7 +22,7 @@
         <ImageView fx:id="productImageView" fitHeight="100" fitWidth="100" />
     </HBox>
     <HBox>
-        <Button text="Agregar" onAction="#handleAddProduct" />
+        <Button text="%button.add" onAction="#handleAddProduct" />
         <!--Button text="Modificar" onAction="#handleUpdateProduct" />
         <Button text="Eliminar" onAction="#handleDeleteProduct" />
         <Button text="Limpiar" onAction="#handleClearFields" /-->

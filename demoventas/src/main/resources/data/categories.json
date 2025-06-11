@@ -13,5 +13,30 @@
     "id": 0,
     "name": "Sonido",
     "description": "Categoria para productos sonoros"
+  },
+  {
+    "id": 0,
+    "name": "Electrodomésticos",
+    "description": "Productos para el hogar"
+  },
+  {
+    "id": 1,
+    "name": "Vestuario",
+    "description": "Vestuario para toda la familia"
+  },
+  {
+    "id": 2,
+    "name": "Lácteos",
+    "description": "Productos lácteos refrigerados"
+  },
+  {
+    "id": 3,
+    "name": "Consumibles",
+    "description": "productos consumibles como tintas"
+  },
+  {
+    "id": 4,
+    "name": "nueva categoria",
+    "description": "asdsadsad"
   }
 ]

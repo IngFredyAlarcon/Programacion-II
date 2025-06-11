@@ -27,6 +27,10 @@ public class ProductViewController {
     @FXML
     private TextField productPrice;
     @FXML
+    private TextField productStock;
+    @FXML
+    private TextArea productDescription;
+    @FXML
     private ComboBox<Category> categoryComboBox;
     @FXML
     private TableView<Product> productTable;
@@ -78,7 +82,9 @@ public class ProductViewController {
     private void handleAddProduct() {
         try {
             String name = productName.getText();
+            String description = productDescription.getText();
             double price = Double.parseDouble(productPrice.getText());
+            int stock = Integer.parseInt(productStock.getText());
             Category category = categoryComboBox.getValue();
 
             if (name.isEmpty() || category == null)
@@ -87,7 +93,12 @@ public class ProductViewController {
             Product product = new Product();
             product.setName(name);
             product.setPrice(price);
+            product.setStock(stock);
+            product.setDescription(description);
             product.setCategory(category);
+            System.err.println(category.getName().substring(0,3));
+            product.setId(productController.nextIdProducts());
+
             if (imageSelected != null) {
                 String destino = "src\\main\\resources\\images\\" + imageSelected.getName();
                 try {
@@ -101,6 +112,8 @@ public class ProductViewController {
 
             productName.clear();
             productPrice.clear();
+            productStock.clear();
+            productDescription.clear();
             categoryComboBox.getSelectionModel().clearSelection();
         } catch (NumberFormatException e) {
             System.out.println("Precio inválido.");

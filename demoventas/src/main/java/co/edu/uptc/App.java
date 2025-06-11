@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 /**
  * JavaFX App
@@ -17,10 +19,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        // scene = new Scene(loadFXML("primary"), 640, 480);
-        // stage.setScene(scene);
-        // stage.show();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/co/edu/uptc/view/MainView.fxml"));
+        Locale locale = new Locale("es");
+        ResourceBundle bundle = ResourceBundle.getBundle("i18n.messages", locale);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/co/edu/uptc/view/MainView.fxml"), bundle);
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("Sistema de Ventas");
         stage.setScene(scene);

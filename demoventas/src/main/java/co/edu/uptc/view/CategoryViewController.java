@@ -30,8 +30,8 @@ public class CategoryViewController {
         String desc = categoryDesc.getText();
 
         if (name.isEmpty()) return;
-
-        Category category = new Category(0, name, desc);
+        
+        Category category = new Category(categoryController.nextIdCategories(), name, desc);
         categoryController.addCategory(category);
 
         categoryName.clear();

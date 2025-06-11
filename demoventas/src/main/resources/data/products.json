@@ -58,5 +58,82 @@
       "description": "Productos relacionados con tecnología"
     },
     "imagePath": "src\\main\\resources\\images\\teclado.jpg"
+  },
+  {
+    "id": 0,
+    "name": "Nevera",
+    "price": 2000000.0,
+    "stock": 0,
+    "category": {
+      "id": 0,
+      "name": "Electrodomésticos",
+      "description": "Productos para el hogar"
+    },
+    "imagePath": "src\\main\\resources\\images\\nevera.jpg"
+  },
+  {
+    "id": 0,
+    "name": "Televisor",
+    "description": "lg smart tv",
+    "price": 2.0E7,
+    "stock": 100,
+    "category": {
+      "id": 0,
+      "name": "Tecnología",
+      "description": "Productos relacionados con tecnología"
+    },
+    "imagePath": "src\\main\\resources\\images\\nevera.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Radio",
+    "description": "radio bluetooth",
+    "price": 100000.0,
+    "stock": 30,
+    "category": {
+      "id": 0,
+      "name": "Sonido",
+      "description": "Categoria para productos sonoros"
+    },
+    "imagePath": "src\\main\\resources\\images\\descarga.png"
+  },
+  {
+    "id": 4,
+    "name": "barra de sonido digital",
+    "description": "prueba",
+    "price": 60000.0,
+    "stock": 20,
+    "category": {
+      "id": 0,
+      "name": "Sonido",
+      "description": "Categoria para productos sonoros"
+    },
+    "imagePath": "src\\main\\resources\\images\\teclado.jpg"
+  },
+  {
+    "id": 5,
+    "name": "sakdlksa",
+    "description": ",zm.dm.m",
+    "price": 98879.0,
+    "stock": 300,
+    "category": {
+      "id": 0,
+      "name": "Sonido",
+      "description": "Categoria para productos sonoros"
+    },
+    "imagePath": "src\\main\\resources\\images\\nevera.jpg"
+  },
+  {
+    "id": 6,
+    "name": "consola xbox",
+    "description": "asdghjjgfhfg",
+    "price": 3000000.0,
+    "stock": 10,
+    "category": {
+      "id": 0,
+      "name": "Entretenimiento",
+      "description": "Actegoria para productos de entretenimiento"
+    },
+    "imagePath": "src\\main\\resources\\images\\xbox.jpg"
   }
 ]

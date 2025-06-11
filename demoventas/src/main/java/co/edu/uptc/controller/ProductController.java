@@ -31,5 +31,15 @@ public class ProductController {
     public void updateProducts() {
         repository.save(products);
     }
+
+    public int nextIdProducts(){
+        int maxId = 0;
+        for (Product product : products) {
+            if (maxId<product.getId()) {
+                maxId = product.getId();
+            }
+        }
+        return maxId+1;
+    }
 }
 

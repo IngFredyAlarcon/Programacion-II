@@ -31,4 +31,14 @@ public class CategoryController {
     public void updateCategories() {
         repository.save(categories);
     }
+
+    public int nextIdCategories(){
+        int maxId = 0;
+        for (Category category : categories) {
+            if (maxId<category.getId()) {
+                maxId = category.getId();
+            }
+        }
+        return maxId+1;
+    }
 }
