@@ -7,8 +7,8 @@ public class Cadena {
         Scanner sc = new Scanner(System.in);
         String cadena = sc.next();
         System.out.println(cadena);
-        String subcadena = cadena.substring(0,cadena.indexOf("@"));
-        String subcadena2 = cadena.substring(cadena.indexOf("@")+1);
+        String subcadena = cadena.substring(0, cadena.indexOf("@"));
+        String subcadena2 = cadena.substring(cadena.indexOf("@") + 1);
         System.out.println(subcadena);
         System.out.println(subcadena2);
         String[] subcadena3 = cadena.split("@");

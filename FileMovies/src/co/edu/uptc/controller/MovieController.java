@@ -16,9 +16,10 @@ public class MovieController {
         movie.setYear(year);
         movie.setGenre(genre);
         movie.setSynopsis(synopsis);
-        if(movie.getTitle().equals(title) && movie.getYear() == year && movie.getGenre().equals(genre) && movie.getSynopsis().equals(synopsis)) {
+        if (movie.getTitle().equals(title) && movie.getYear() == year && movie.getGenre().equals(genre)
+                && movie.getSynopsis().equals(synopsis)) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
