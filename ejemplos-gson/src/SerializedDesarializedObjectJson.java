@@ -32,6 +32,7 @@ public class SerializedDesarializedObjectJson {
         list.add(new Person(2, "Carolina", "Gómez"));
         list.add(new Person(3, "Andrea", "Serna"));
         String jsonCollection = serializeObjectCollectionToJson(list);
+        System.out.println("All");
         System.out.println(jsonCollection);
         
     }

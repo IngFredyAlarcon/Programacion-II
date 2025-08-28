@@ -8,7 +8,7 @@ import co.edu.uptc.model.Movie;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in, "UTF-8");
         MovieController movieController = new MovieController();
         String title, genre, synopsis;
         int year;
