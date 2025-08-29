@@ -81,6 +81,15 @@ public class ListPersons {
             System.out.println("------------------------------------------------------");
             System.out.println("Total personas en el directorio: " + directory.getListPersons().size() );
             System.out.println("------------------------------------------------------");
+
+            // Actualizar una persona
+            Person updatedPerson = new Person(12, "Dayana", "Pinto");
+            updatePerson(directory, updatedPerson);
+            System.out.println("Directorio después de la actualización:");
+            System.out.println("------------------------------------------------------");
+            System.out.println(gson.toJson(directory));
+            System.out.println("------------------------------------------------------");
+            scanner.close();
         }
             
     }
@@ -117,5 +126,15 @@ public class ListPersons {
         return directory.getListPersons().stream()
                 .filter(person -> person.getLastName().equalsIgnoreCase(lastName))
                 .toList();
+    }
+
+    //Método para actualizar una persona en el directorio
+    public static void updatePerson(Directory directory, Person updatedPerson) {
+        for (int i = 0; i < directory.getListPersons().size(); i++) {
+            if (directory.getListPersons().get(i).getId() == updatedPerson.getId()) {
+                directory.getListPersons().set(i, updatedPerson);
+                return;
+            }
+        }
     }
 }
