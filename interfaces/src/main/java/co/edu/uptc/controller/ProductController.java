@@ -1,6 +1,5 @@
 package co.edu.uptc.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import co.edu.uptc.model.Product;

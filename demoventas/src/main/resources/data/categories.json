@@ -38,5 +38,15 @@
     "id": 4,
     "name": "nueva categoria",
     "description": "asdsadsad"
+  },
+  {
+    "id": 5,
+    "name": "new tech",
+    "description": "description"
+  },
+  {
+    "id": 6,
+    "name": "nueva categoria",
+    "description": "breve descripción"
   }
 ]

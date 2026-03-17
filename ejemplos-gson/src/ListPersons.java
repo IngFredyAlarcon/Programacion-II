@@ -33,7 +33,7 @@ public class ListPersons {
         final Gson gson2 = gb.create();
         final Person person = gson.fromJson(sb.toString(), Person.class);
         final Person person2 = gson2.fromJson(sb.toString(), Person.class);
-        person.setFirst_name("Carolina");
+        person.setFirstName("Carolina");
         System.out.println(showPersonProperties(person));
         System.out.println(gson2.toJson(person2));
 
@@ -45,8 +45,8 @@ public class ListPersons {
 
     // imprimir por propiedades
     public static String showPersonProperties(Person person) {
-        return "id: " + person.getId() + ", firstName: " + person.getFirst_name() + ", lastName: "
-                + person.getLast_name();
+        return "id: " + person.getId() + ", firstName: " + person.getFirstName() + ", lastName: "
+                + person.getLastName();
     }
 
     

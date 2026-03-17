@@ -11,8 +11,8 @@ public class PersonTest {
         final Gson gson = new Gson();
         final Person person = gson.fromJson(json, Person.class);
         assertEquals(46, person.getId());
-        assertEquals("Denna", person.getFirst_name());
-        assertEquals("Crosio", person.getLast_name());
+        assertEquals("Denna", person.getFirstName());
+        assertEquals("Crosio", person.getLastName());
 
     }
 

@@ -135,5 +135,31 @@
       "description": "Actegoria para productos de entretenimiento"
     },
     "imagePath": "src\\main\\resources\\images\\xbox.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Play Station",
+    "description": "sadsadsad",
+    "price": 2000000.0,
+    "stock": 40,
+    "category": {
+      "id": 5,
+      "name": "new tech",
+      "description": "description"
+    },
+    "imagePath": "src\\main\\resources\\images\\Imagen1.png"
+  },
+  {
+    "id": 8,
+    "name": "monitor",
+    "description": "monitor lg",
+    "price": 4000.0,
+    "stock": 4,
+    "category": {
+      "id": 0,
+      "name": "Tecnología",
+      "description": "Productos relacionados con tecnología"
+    },
+    "imagePath": "src\\main\\resources\\images\\RobloxScreenShot20250907_114635637.png"
   }
 ]
